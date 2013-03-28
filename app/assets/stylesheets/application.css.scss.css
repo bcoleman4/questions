@@ -1,0 +1,91 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+ *= require_self
+ *= require_tree .
+ */
+
+.container {
+	width: 100%;
+	height: 100%;
+	min-height: 100%;
+	position: absolute;
+	overflow: hidden;
+	background: #121626; /* Old browsers */
+	background: -moz-linear-gradient(top,  #121626 0%, #2b3453 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#121626), color-stop(100%,#2b3453)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  #121626 0%,#2b3453 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  #121626 0%,#2b3453 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  #121626 0%,#2b3453 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  #121626 0%,#2b3453 100%); /* W3C */
+}
+
+.matrix {
+	background:  url(bg-matrix.png) bottom right no-repeat;
+	width: 100%;
+	height: 100%;
+	min-height: 646px;
+	position: absolute;
+}
+
+.main {
+	color:white;
+	font-family: bryant-web;
+	
+	.heading {
+		font-size: 40px;
+		background: #fff;
+		height: 100px;
+		width:100%;
+		margin-top: 20px;
+		margin-left: 20px;
+		position: absolute;
+		text-align:center;
+		
+	}
+	
+	.leftmargin {
+		color: gray;
+		background: #fff;
+		font-size: 30px;
+		margin-left:20px;
+		margin-top: 140px;
+		margin-bottom: 20px;
+		height:100%;
+		width: 300px;
+		position: absolute;
+		text-align: center;
+	}
+	
+	.content{
+		color:gray;
+		margin-top: 140px;
+		margin-left: 340px;
+		width:100%;
+		height:100%;
+		position: absolute;
+		text-align: center;
+		background: #fff;
+	}
+	top {
+		color:gray;
+		font-size: 40px;
+	}
+	
+.mb {margin-bottom: 50px;}
+.mr {margin-right: 50px;}
+.ml {margin-left: 50px;}
+.mt {margin-top: 50px;}
+.bt {margin-top: 400px;} /*position for button*/
+}
+
+
+
+	

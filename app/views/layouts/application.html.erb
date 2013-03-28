@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+	    <meta name="google-site-verification" content="i9Jaxytu5KfWNzdq66rjR-4iZnv5SMHSXHXp6IEKuTM" />
+		<link type="text/css" rel="apple-touch-icon-precomposed" href="images/icon.png?v=1" />
+
+	    <script src="js/modernizr-2.5.3.min.js" type="text/javascript"></script>
+
+	     <script type="text/javascript">
+			  if (!location.hash)
+			  {location.href = location + "#home";}
+	 	</script>
+
+	    <script type="text/javascript" src="//use.typekit.net/ejp8few.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+
+	<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	
+</head>
+
+<body>
+<div class="container">
+	
+	<%= stylesheet_link_tag    "application", :media => "all" %>
+	<%= javascript_include_tag "application" %>
+	<%= csrf_meta_tags %>
+	 
+	<%= yield %>
+
+</div>
+
+<div class= "matrix">
+</div>
+
+<div class= "main">
+
+	<div class= "heading">
+		<div class= "mt"><top>Questions</top></div>
+	</div>
+
+	<div class= "leftmargin">
+		<div class="mt"><%= image_tag("logo-mepro.png") %></div>
+		<%= button_to "Take me Home", questions_url, method: :index %>
+	</div>
+
+</div>
+
+</body>
+
+</html>
